@@ -37,3 +37,18 @@ body {
   color: #ffffff;
   text-align: right;
 }
+
+article .imgs img {
+  position: relative;
+  width: 40%;
+}
+
+article .imgs {
+  position: relative;
+  top: 4vw;
+  left: 2vw;
+}
+
+article div {
+  color: #ffffff;
+}
