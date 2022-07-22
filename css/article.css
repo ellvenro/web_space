@@ -1,14 +1,34 @@
 article {
-  color: #ffffff;
   height: 38vw;
   border: solid #000;
 }
 
 .imgs {
   position: relative;
+  /*Для анимации*/
+  /*opacity: 0;*/
+  opacity: 1;
+  transition-duration: 1.5s;
+}
+
+/*Для анимации*/
+.imgs.active {
+  opacity: 1;
+  display: block;
 }
 
 .imgs img {
   position: absolute;
   width: 50%;
+  left: 1vw;
+  top: 0.3vw;
+}
+
+.texts {
+  position: relative;
+  color: #ffffff;
+  font-size: 2vw;
+  right: 1vw;
+  left: 52vw;
+  top: 0.3vw;
 }
