@@ -1,0 +1,40 @@
+article.type3 {
+  height: 100vw;
+}
+
+.text_type3 {
+  position: relative;
+  margin: 10vw 50vw 0 4vw;
+}
+
+.img_type3 {
+  position: relative;
+  text-align: right;
+  right: -12vw;
+  top: -10vw;
+}
+
+.img_type3 img {
+  position: absolute;
+  width: 70%;
+}
+
+#print3 {
+  position: relative;
+  margin-top: -13vw;
+  margin-left: 18vw;
+  margin-right: -8vw;
+  text-align: right;
+}
+
+#arrow3 {
+  position: relative;
+  margin-top: 12vw;
+  margin-right: 20vw;
+  margin-left: 52vw;
+  text-align: right;
+}
+
+#arrow3 img {
+  width: 13vw;
+}
