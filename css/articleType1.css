@@ -1,4 +1,4 @@
-article {
+article.type1 {
   height: 38vw;
 }
 
@@ -17,8 +17,6 @@ article {
   margin-left: 54vw;
   margin-right: 4vw;
   margin-top: 2.5vw;
-  text-indent: 1.5em;
-  text-align: justify;
 }
 
 .text_type1 .text_head_type1 {
@@ -29,17 +27,17 @@ article {
   position: relative;
   font-family: 'Segoe Script Normal';
   color: #f02b4f;
-  margin-left: 3vw;
-  margin-top: 2vw;
+  margin-left: 2vw;
+  margin-top: 3vw;
   font-size: 1.5vw;
 }
 
-.arrow {
+#arrow1 {
   position: relative;
-  margin-left: 1.5vw;
+  margin-left: 1vw;
   margin-top: -14vw;
 }
 
-.arrow img {
-  width: 12vw;
+#arrow1 img {
+  width: 7vw;
 }
