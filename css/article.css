@@ -1,0 +1,14 @@
+article {
+  color: #ffffff;
+  height: 38vw;
+  border: solid #000;
+}
+
+.imgs {
+  position: relative;
+}
+
+.imgs img {
+  position: absolute;
+  width: 50%;
+}

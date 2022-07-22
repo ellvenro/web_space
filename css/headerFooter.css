@@ -4,13 +4,14 @@
 }
 
 body {
-  background: #000;
+  background: #ccc;
 }
 
 ::-webkit-scrollbar {
   width: 0px;
 }
 
+/*Header*/
 header {
   height: 55vw;
 }
@@ -40,21 +41,7 @@ header {
   text-align: right;
 }
 
-article {
-  color: #ffffff;
-  height: 40vw;
-  border: solid #000;
-}
-
-.imgs {
-  position: relative;
-}
-
-.imgs img {
-  position: absolute;
-  width: 40%;
-}
-
+/*Footer*/
 footer {
   margin-bottom: 0;
   position: relative;
