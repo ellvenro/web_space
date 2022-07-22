@@ -11,3 +11,10 @@
 	font-weight: normal;
 	src: local('Jura'), url('../fonts/Jura-VariableFont_wght.ttf');
 }
+
+@font-face {
+	font-family: 'Segoe Script Normal';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Segoe Script Normal'), url('../fonts/segoesc.ttf');
+}

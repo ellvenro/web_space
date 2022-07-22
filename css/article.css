@@ -1,9 +1,11 @@
 article {
   height: 38vw;
+
+    /*Временное*/
   border: solid #000;
 }
 
-.imgs {
+.img_type1 {
   position: relative;
   /*Для анимации*/
   /*opacity: 0;*/
@@ -12,26 +14,55 @@ article {
 }
 
 /*Для анимации*/
-.imgs.active {
+.img_type1.active {
   opacity: 1;
   display: block;
 }
 
-.imgs img {
+.img_type1 img {
   position: absolute;
-  width: 50%;
-  left: 1vw;
-  top: 0.3vw;
+  width: 35%;
+  left: 8vw;
 
   /*Временное*/
-  border: solid #fff;
+  border: solid #000;
 }
 
-.texts {
+.text_type1 {
   position: relative;
-  color: #ffffff;
-  font-size: 2vw;
-  right: 1vw;
-  left: 54vw;
-  top: 0.3vw;
+  color: #c3c3d9;
+  font-size: 1.8vw;
+  margin-left: 54vw;
+  margin-right: 4vw;
+  margin-top: 2.5vw;
+  font-family: 'Jura', sans-serif;
+  text-indent: 1.5em;
+  text-align: justify;
+}
+
+.text_type1 .text_head_type1 {
+  font-family: 'Rubik Glitch';
+  margin-bottom: 1.8vw;
+  font-size: 2.5vw;
+  margin-left: -2vw;
+  text-align: center;
+}
+
+.print {
+  position: relative;
+  font-family: 'Segoe Script Normal';
+  color: #f02b4f;
+  margin-left: 3vw;
+  margin-top: 2vw;
+  font-size: 1.5vw;
+}
+
+.arrow {
+  position: relative;
+  margin-left: 1.5vw;
+  margin-top: -14vw;
+}
+
+.arrow img {
+  width: 12vw;
 }
