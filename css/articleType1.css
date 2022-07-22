@@ -23,19 +23,16 @@ article.type1 {
   margin-left: -2vw;
 }
 
-.print {
+#print1 {
   position: relative;
-  font-family: 'Segoe Script Normal';
-  color: #f02b4f;
-  margin-left: 2vw;
   margin-top: 3vw;
-  font-size: 1.5vw;
 }
 
 #arrow1 {
   position: relative;
   margin-left: 1vw;
   margin-top: -14vw;
+  margin-right: 60vw;
 }
 
 #arrow1 img {
