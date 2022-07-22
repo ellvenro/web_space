@@ -4,8 +4,12 @@ article {
 
 .img_type1 {
   position: relative;
-  width: 100%;
-  left: 1vw;
+}
+
+.img_type1 img {
+  position: absolute;
+  width: 35%;
+  left: 8vw;
 }
 
 .text_type1 {
