@@ -4,16 +4,8 @@ article {
 
 .img_type1 {
   position: relative;
-  /*Для анимации*/
-  /*opacity: 0;*/
   opacity: 1;
   transition-duration: 1.5s;
-}
-
-/*Для анимации*/
-.img_type1.active {
-  opacity: 1;
-  display: block;
 }
 
 .img_type1 img {
