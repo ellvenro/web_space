@@ -1,8 +1,5 @@
 article {
   height: 38vw;
-
-    /*Временное*/
-  border: solid #000;
 }
 
 .img_type1 {
@@ -23,9 +20,6 @@ article {
   position: absolute;
   width: 35%;
   left: 8vw;
-
-  /*Временное*/
-  border: solid #000;
 }
 
 .text_type1 {
