@@ -6,8 +6,8 @@
 }
 
 @font-face {
-	font-family: 'Segoe Script Normal';
+	font-family: 'Jura';
 	font-style: normal;
 	font-weight: normal;
-	src: local('Segoe Script Normal'), url('../fonts/segoesc.ttf');
+	src: local('Jura'), url('../fonts/Jura-VariableFont_wght.ttf');
 }

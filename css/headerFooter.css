@@ -24,6 +24,18 @@ header {
   margin: 0;
 }
 
+/*Вводный текст*/
+#intro {
+  font-size: 1.8vw;
+  color: #ffffff;
+  font-family: 'Jura', sans-serif;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  margin-bottom: 5vw;
+  text-indent: 1.5em;
+  text-align: justify;
+}
+
 #logo {
   position: absolute;
   top: 4vw;
@@ -47,8 +59,8 @@ footer {
   position: relative;
   margin-top: 1.5vw;
   height: 5vw;
-  font-family: 'Segoe Script Normal';
-  font-size: 1.5vw;
+  font-family: 'Rubik Glitch';
+  font-size: 1.8vw;
 }
 
 #link {
