@@ -4,34 +4,21 @@ article {
 
 .img_type1 {
   position: relative;
-  opacity: 1;
-  transition-duration: 1.5s;
-}
-
-.img_type1 img {
-  position: absolute;
-  width: 35%;
-  left: 8vw;
+  width: 100%;
+  left: 1vw;
 }
 
 .text_type1 {
   position: relative;
-  color: #c3c3d9;
-  font-size: 1.8vw;
   margin-left: 54vw;
   margin-right: 4vw;
   margin-top: 2.5vw;
-  font-family: 'Jura', sans-serif;
   text-indent: 1.5em;
   text-align: justify;
 }
 
 .text_type1 .text_head_type1 {
-  font-family: 'Rubik Glitch';
-  margin-bottom: 1.8vw;
-  font-size: 2.5vw;
   margin-left: -2vw;
-  text-align: center;
 }
 
 .print {
