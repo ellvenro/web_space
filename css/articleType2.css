@@ -21,7 +21,6 @@ article.type2 {
 #arrow2 {
   position: relative;
   margin-right: 47.5vw;
-  margin-top: -2vw;
   text-align: right;
 }
 
@@ -31,7 +30,7 @@ article.type2 {
 
 #print2 {
   position: relative;
-  margin-right: 38vw;
+  margin-right: 32vw;
   text-align: center;
   font-size: 2vw;
 }
