@@ -1,5 +1,6 @@
 const imgs = document.querySelectorAll('.img_anim');
 const texts = document.querySelectorAll('.text_anim');
+let container = document.getElementById('imgs_anim');
 
 let index = -1;
 let indexPrev = -1;
@@ -37,4 +38,4 @@ function nextImg()
   activeImg(index, indexPrev);
 }
 
-setInterval(nextImg, 3500);
+var intervalID = setInterval(nextImg, 3000);
