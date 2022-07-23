@@ -10,6 +10,7 @@ body {
   font-family: 'Jura', sans-serif;
   text-indent: 1.5em;
   text-align: justify;
+  max-width: 1920px;
 }
 
 ::-webkit-scrollbar {
