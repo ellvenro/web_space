@@ -1,0 +1,49 @@
+article.type4 {
+  height: 75vw;
+}
+
+.imgs_long4 {
+  text-align: center;
+  text-indent: 0;
+  position: relative;
+  width: 100%;
+  margin-top: -4vw;
+
+}
+
+.img_long4 {
+  width: 40%;
+  position: absolute;
+  left: 30%;
+  top: 3vw;
+  opacity: 0;
+  transition-duration: 3s;
+}
+
+.img_long4.active {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.img_long4.noactive {
+  opacity: 0;
+  transform: scale(0);
+  display: block;
+}
+
+#img2.noactive {
+  transform: scale(0) translateX(0vw) translateY(-5vw);
+}
+
+#img3.noactive {
+  transform: scale(0) translateX(-5vw) translateY(25vw);
+}
+
+#img4.noactive {
+  transform: scale(0) translateX(-10vw) translateY(-5vw);
+}
+
+.img_long4 img {
+  width: 100%;
+	height: 100%;
+}

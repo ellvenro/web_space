@@ -1,12 +1,18 @@
-const imgs = document.querySelectorAll('.imgs');
+const imgs = document.querySelectorAll('.img_long4');
 
 let index = -1;
+let indexPrev = -1;
 
-function activeImg(n)
+function activeImg(n, np)
 {
   for(img of imgs)
+  {
     img.classList.remove('active');
+    img.classList.remove('noactive');
+  }
   imgs[n].classList.add('active');
+  if (np != imgs.length - 1)
+    imgs[np].classList.add('noactive');
 }
 
 function nextImg()
@@ -15,7 +21,12 @@ function nextImg()
     index = 0;
   else
     index++;
-  activeImg(index);
+
+  indexPrev = index-1;
+  if(indexPrev == -1)
+    indexPrev = imgs.length - 1;
+
+  activeImg(index, indexPrev);
 }
 
-setInterval(nextImg, 2500);
+setInterval(nextImg, 3500);
