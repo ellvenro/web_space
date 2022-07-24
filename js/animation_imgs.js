@@ -1,10 +1,12 @@
+//Анимация третьего блока 8-ми картинок
+
 const imgs = document.querySelectorAll('.img_anim');
 const texts = document.querySelectorAll('.text_anim');
-let container = document.getElementById('imgs_anim');
 
 let index = -1;
 let indexPrev = -1;
 
+//осуществление анимации 8-ми картинок
 function activeImg(n, np)
 {
   for(img of imgs)
@@ -24,6 +26,7 @@ function activeImg(n, np)
   texts[n].classList.add('active');
 }
 
+//Запуск основной функции анимации
 function nextImg()
 {
   if(index == imgs.length - 1)
