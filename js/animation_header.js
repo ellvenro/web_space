@@ -1,7 +1,8 @@
-const block = document.querySelectorAll('.back'),
-  blockIm = document.querySelectorAll('.back img');
+const back = document.querySelectorAll('.back'),
+  backIm = document.querySelectorAll('.back img');
 let scale = -1,
   scalePrev = -1;
+var intervalID = null;
 
 //Функция задержки
 function sleep(ms)
@@ -38,7 +39,7 @@ async function animHead()
 //Анимация заголовка при скролле
 function animEvent()
 {
-  const rect = block[0].getBoundingClientRect();
+  const rect = back[0].getBoundingClientRect();
 
   scale = 1 + 100 / rect.bottom;
 
@@ -48,14 +49,22 @@ function animEvent()
   if (window.pageYOffset == 0)
     scale = 1;
 
-  blockIm[0].style.transform = ("scale(" + scale + ")");
-
+  backIm[0].style.transform = ("scale(" + scale + ")");
   scalePrev = scale;
 }
 
+//Анимация дребезга
+async function animRattling()
+{
+  console.log("инт1");
+  //document.getElementById('text_header').style.transform = ("scale(" + 1.1 + ") translateX(0vw) translateY(-5vw)");
+  //document.getElementById('logo').
+  backIm[0].style.transform = ("scale(1.5)");
+  await sleep(1000);
+  backIm[0].style.transform = ("scale(1)");
+  console.log("инт2");
+}
 
-
-//setTimeout(() => {animHead()}, 1000);
 animHead();
+sleep(3000);
 window.addEventListener('scroll', animEvent);
-//var intervalID = setInterval(animBack, 3000);
