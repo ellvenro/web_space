@@ -1,0 +1,22 @@
+.frames {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.frames .link, .frames .line, .frames div {
+  position: relative;
+  right: 0;
+  text-indent: 0;
+  text-align: center;
+  width: 30%;
+  display: inline-block;
+}
+
+.frames div .link{
+  width: 100%;
+}
+
+.frames .line {
+  width: 1%;
+}

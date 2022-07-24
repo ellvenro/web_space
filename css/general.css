@@ -92,7 +92,7 @@ footer {
   font-size: 1.8vw;
 }
 
-#link {
+.link {
   position: absolute;
   display: block;
   color: #ffffff;
@@ -100,11 +100,11 @@ footer {
   right: 10%;
 }
 
-#link:hover {
+.link:hover {
   text-decoration: underline;
 }
 
-#link:visited {
+.link:visited {
   color: #505050;
 }
 
