@@ -53,6 +53,7 @@ function animEvent()
   scalePrev = scale;
 }
 
+//?
 //Анимация дребезга
 async function animRattling()
 {
@@ -62,7 +63,6 @@ async function animRattling()
   backIm[0].style.transform = ("scale(1.5)");
   await sleep(1000);
   backIm[0].style.transform = ("scale(1)");
-  console.log("инт2");
 }
 
 animHead();
