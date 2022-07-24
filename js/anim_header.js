@@ -33,7 +33,7 @@ async function animHead()
   }
 
   //Появление основных объектов заголовка
-  document.getElementById('circles').classList.add("noactive");
+  document.querySelectorAll('.circles')[0].classList.add("noactive");
   const head = document.querySelectorAll('header');
   head[0].classList.remove('active');
 }
