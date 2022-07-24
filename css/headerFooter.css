@@ -11,10 +11,15 @@ body {
   text-indent: 1.5em;
   text-align: justify;
   max-width: 1920px;
+  cursor: url('../img/curs.png'), auto;
 }
 
 ::-webkit-scrollbar {
   width: 0px;
+}
+
+a:hover {
+	cursor: url('../img/curs2.png'), pointer;
 }
 
 /*Кнопка "Наверх"*/
@@ -37,12 +42,12 @@ body {
 
 #button a {
   text-indent: 0;
-  text-align: center;
 }
 
 #button:hover {
   cursor: pointer;
   transform: translateY(-5vh);
+  cursor: url('../img/curs2.png'), pointer;
 }
 
 #button:active {
