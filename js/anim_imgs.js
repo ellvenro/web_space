@@ -47,7 +47,7 @@ function nextImg()
 function startTimer()
 {
   const rect = imgs[0].getBoundingClientRect();
-  if (rect.top - window.pageYOffset > window.innerHeight / 2)
+  if (rect.top > window.innerHeight / 2)
   {
     clearInterval(intervalID);
     intervalID = null;
@@ -65,7 +65,7 @@ function startTimer()
   }
   else {
     if (intervalID == null)
-      intervalID = setInterval(nextImg, 3000);
+      intervalID = setInterval(nextImg, 1500);
   }
 }
 
