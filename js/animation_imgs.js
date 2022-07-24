@@ -41,4 +41,4 @@ function nextImg()
   activeImg(index, indexPrev);
 }
 
-var intervalID = setInterval(nextImg, 3000);
+var intervalID = setInterval(nextImg, 500);

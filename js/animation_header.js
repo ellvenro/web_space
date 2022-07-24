@@ -42,7 +42,7 @@ function animEvent()
 
   scale = 1 + 100 / rect.bottom;
 
-  if (scale > 2)
+  if (scale > 2 || rect.bottom < 0)
     scale = scalePrev;
 
   if (window.pageYOffset == 0)
@@ -54,6 +54,9 @@ function animEvent()
   scalePrev = scale;
 }
 
+
+
 //setTimeout(() => {animHead()}, 1000);
 animHead();
 window.addEventListener('scroll', animEvent);
+//var intervalID = setInterval(animBack, 3000);
