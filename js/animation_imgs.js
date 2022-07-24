@@ -67,7 +67,6 @@ function startTimer()
     if (intervalID == null)
       intervalID = setInterval(nextImg, 3000);
   }
-  console.log(rect.top + " " +window.pageYOffset + " "+ window.innerHeight / 2);
 }
 
 window.addEventListener('scroll', startTimer);
