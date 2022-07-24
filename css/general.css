@@ -1,0 +1,127 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+  background: #000;
+  color: #c3c3d9;
+  font-size: 1.8vw;
+  font-family: 'Jura', sans-serif;
+  text-indent: 1.5em;
+  text-align: justify;
+  max-width: 1920px;
+  cursor: url('../img/curs.png'), auto;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+a:hover {
+	cursor: url('../img/curs2.png'), pointer;
+}
+
+/*Кнопка "Наверх"*/
+.button {
+  position: fixed;
+  width: 100%;
+  height: 50vh;
+  background-color: #15151f;
+  top: 95vh;
+  left: 0vw;
+  border-radius: 50%;
+  border: 5px #19194f;
+  z-index: 3;
+  box-shadow: inset 2px -2px 1px rgba(0,0,0,.3), inset -2px 2px 1px rgba(255,255,255,.3);
+  transition-duration: 0.8s;
+  opacity: 0.9;
+  text-indent: 0;
+  display: inline-block;
+}
+
+.button a {
+  text-indent: 0;
+}
+
+.button:hover {
+  cursor: pointer;
+  transform: translateY(-5vh);
+  cursor: url('../img/curs2.png'), pointer;
+}
+
+.button:active {
+  box-shadow: -2px 2px 1px rgba(0,0,0,0.3) inset, -2px -2px 1px rgba(0,0,0,0.3) inset, 2px 2px 1px rgba(0,0,0,0.3) inset, 2px -2px 1px rgba(0,0,0,0.3) inset;
+}
+
+/*Первоначальная аставка*/
+.circles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.circle {
+  width: 1vw;
+  height: 1vw;
+  margin: 45vh 0.7vw 0 0.7vw;
+  border-radius: 50%;
+  display: inline-block;
+  transition-duration: 0.5s;
+  opacity: 0.5;
+  background-color: #464657;
+}
+
+.circles.noactive {
+  opacity: 0;
+}
+
+.circle.active {
+  transform: scale(1.3);
+  background-color: #c3c3d9;
+  opacity: 1;
+}
+/*Footer*/
+footer {
+  margin-bottom: 0;
+  position: relative;
+  margin-top: 3vh;
+  height: 5vw;
+  font-family: 'Rubik Glitch';
+  font-size: 1.8vw;
+}
+
+#link {
+  position: absolute;
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  right: 10%;
+}
+
+#link:hover {
+  text-decoration: underline;
+}
+
+#link:visited {
+  color: #505050;
+}
+
+/*Класс заголовков*/
+.head {
+  text-align: center;
+  font-family: 'Rubik Glitch';
+  font-size: 2.5vw;
+  margin-bottom: 1.8vw;
+  position: relative;
+  margin-top: 4vw;
+  margin-bottom: 4vw;
+}
+
+/*Класс подписей*/
+.print {
+  font-family: 'Segoe Script Normal';
+  color: #f02b4f;
+  font-size: 2vw;
+}
