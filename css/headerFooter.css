@@ -17,25 +17,48 @@ body {
   width: 0px;
 }
 
+/*Первоначальная аставка*/
+#circle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+#circle1, #circle2, #circle3 {
+  width: 10%;
+  border: solid #c3c3d9;
+}
+
 /*Header*/
 header {
-  height: 55vw;
+  height: 100vh;
   text-indent: 0;
+  margin-bottom: 4vh;
+  transition-duration: 1.5s;
+}
+
+header.active {
+  opacity: 0;
 }
 
 .back {
   object-fit: cover;
   overflow: hidden;
   width: 100%;
-  height: 50vw;
+  height: 100%;
   margin: 0;
+  transition-duration: 1.5s;
 }
 
-/*Вводный текст*/
-#intro {
-  margin-left: 4vw;
-  margin-right: 4vw;
-  margin-bottom: 5vw;
+header.active .back {
+  transform: scale(1.2);
+}
+
+.back img {
+  width: 100%;
+  height: 100%;
+  transition-duration: 0.5s;
 }
 
 #logo {
@@ -43,6 +66,11 @@ header {
   top: 4vw;
   left: 2vw;
   width: 40%;
+  transition-duration: 1.5s;
+}
+
+header.active #logo {
+  transform: scale(1.2) translateX(-1vw) translateY(-1vw);
 }
 
 #text_header {
@@ -53,13 +81,37 @@ header {
   font-size: 2.5vw;
   color: #ffffff;
   text-align: right;
+  transition-duration: 1.5s;
+}
+
+header.active #text_header {
+  transform: scale(1.2) translateX(1vw) translateY(1vw);
+}
+
+#numbers {
+  width: 15%;
+  text-align: right;
+  margin-left: 85%;
+  margin-right: 0;
+}
+
+#number3, #number2, #number1  {
+  width: 30%;
+  display: inline-block;
+}
+
+/*Вводный текст*/
+#intro {
+  margin-left: 4vw;
+  margin-right: 4vw;
+  margin-bottom: 5vw;
 }
 
 /*Footer*/
 footer {
   margin-bottom: 0;
   position: relative;
-  margin-top: 1.5vw;
+  margin-top: 3vh;
   height: 5vw;
   font-family: 'Rubik Glitch';
   font-size: 1.8vw;
