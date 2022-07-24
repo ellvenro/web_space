@@ -53,18 +53,5 @@ function animEvent()
   scalePrev = scale;
 }
 
-//?
-//Анимация дребезга
-async function animRattling()
-{
-  console.log("инт1");
-  //document.getElementById('text_header').style.transform = ("scale(" + 1.1 + ") translateX(0vw) translateY(-5vw)");
-  //document.getElementById('logo').
-  backIm[0].style.transform = ("scale(1.5)");
-  await sleep(1000);
-  backIm[0].style.transform = ("scale(1)");
-}
-
 animHead();
-sleep(3000);
 window.addEventListener('scroll', animEvent);
