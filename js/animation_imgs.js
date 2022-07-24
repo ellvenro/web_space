@@ -6,6 +6,8 @@ const texts = document.querySelectorAll('.text_anim');
 let index = -1;
 let indexPrev = -1;
 
+var intervalID = null;
+
 //осуществление анимации 8-ми картинок
 function activeImg(n, np)
 {
@@ -41,4 +43,31 @@ function nextImg()
   activeImg(index, indexPrev);
 }
 
-var intervalID = setInterval(nextImg, 500);
+//Начало анимации картинок блока при скролле
+function startTimer()
+{
+  const rect = imgs[0].getBoundingClientRect();
+  if (rect.top - window.pageYOffset > window.innerHeight / 2)
+  {
+    clearInterval(intervalID);
+    intervalID = null;
+    index = -1;
+    indexPrev = -1;
+
+    for(img of imgs)
+    {
+      img.classList.remove('active');
+      img.classList.remove('noactive');
+    }
+
+    for(text of texts)
+      text.classList.remove('active');
+  }
+  else {
+    if (intervalID == null)
+      intervalID = setInterval(nextImg, 3000);
+  }
+  console.log(rect.top + " " +window.pageYOffset + " "+ window.innerHeight / 2);
+}
+
+window.addEventListener('scroll', startTimer);

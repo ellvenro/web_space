@@ -49,7 +49,6 @@ function animEvent()
     scale = 1;
 
   blockIm[0].style.transform = ("scale(" + scale + ")");
-  console.log(blockIm[0].style.transform);
 
   scalePrev = scale;
 }
