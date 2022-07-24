@@ -11,10 +11,24 @@
   <link rel="stylesheet" href="css/fonts.css">
 </head>
 <body>
-  <header>
-    <img src="img/back1.jpg" class="back">
+
+  <!--Начальная заставка-->
+  <div id="circle">
+    <div id="circle1"></div>
+    <div id="circle2"></div>
+    <div id="circle3"></div>
+  </div>
+
+  <header class="active">
+    <div class="back"><img src="img/back1.jpg"></div>
     <div id="text_header" title="Уверяю тебя, это увлекательно ;)">
-      Приготовиться к погружению в <br>мир далекого космоса.. <br>3.. 2.. 1..
+      <div>Приготовиться к погружению в</div>
+      <div>мир далекого космоса..</div>
+      <div id="numbers">
+        <div id="number3">3..</div>
+        <div id="number2">2..</div>
+        <div id="number1">1..</div>
+      </div>
     </div>
     <img id="logo" src="img/logo.png" alt="Далекий космос">
   </header>
@@ -125,7 +139,8 @@
     </div>
   </article>
 
-  <script src="js/animation_imgs.js"></script>
+  <script src="js/animation_imgs.js"></script>\
+  <script src="js/animation_header.js"></script>
   <footer><a id="link" href="https://github.com/ellvenro">© ellvenro</a></footer>
 </body>
 </html>
