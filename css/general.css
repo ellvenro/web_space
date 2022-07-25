@@ -18,6 +18,10 @@ body {
   width: 0px;
 }
 
+header.active {
+  opacity: 0;
+}
+
 a:hover {
 	cursor: url('../img/curs3.png'), pointer;
 }
@@ -146,6 +150,7 @@ footer {
   position: relative;
   margin-top: 4vw;
   margin-bottom: 4vw;
+  text-indent: 0;
 }
 
 /*Класс подписей*/

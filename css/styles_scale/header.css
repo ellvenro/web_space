@@ -6,10 +6,6 @@ header {
   transition-duration: 1.5s;
 }
 
-header.active {
-  opacity: 0;
-}
-
 .back {
   object-fit: cover;
   overflow: hidden;
@@ -19,17 +15,13 @@ header.active {
   transition-duration: 1.5s;
 }
 
-header.active .back {
-  transform: scale(1.2);
-}
-
 .back img {
   width: 100%;
   height: 100%;
   transition-duration: 0.5s;
 }
 
-#logo {
+.logo {
   position: absolute;
   top: 4vw;
   left: 2vw;
@@ -37,7 +29,7 @@ header.active .back {
   transition-duration: 1.5s;
 }
 
-header.active #logo {
+header.active .logo {
   transform: scale(1.2) translateX(-1vw) translateY(-1vw);
 }
 
