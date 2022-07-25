@@ -37,7 +37,19 @@
 ```
 
 ```CSS
+/*Ссылки на другие страницы*/
+.links {
+  width: 100%;
+  text-align: center;
+  ...
+}
 
+.links .link {
+  position: relative;
+  width: 25%;
+  display: inline-block;
+  ...
+}
 ```
 
 <a name="scale"></a>
