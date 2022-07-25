@@ -61,20 +61,24 @@ async function animHead()
   //Анимация точек в начале
   const circles = document.querySelectorAll('.circle');
 
+  //Трехкратное добавление и удаление класса active
   for(let i = 0; i < 3; i++)
   {
     circles[0].classList.add('active');
     circles[1].classList.remove('active');
     circles[2].classList.add('active');
+    //Задержка между анимацией
     await sleep(300);
     circles[0].classList.remove('active');
     circles[1].classList.add('active');
     circles[2].classList.remove('active');
+    //Задержка между анимацией
     await sleep(300);
   }
 
-  //Появление основных объектов заголовка
+  //Маскировка элементов загрузки
   document.getElementById('circles').classList.add("noactive");
+  //Появление основных объектов заголовка
   const head = document.querySelectorAll('header');
   head[0].classList.remove('active');
 }
