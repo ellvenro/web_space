@@ -1,5 +1,5 @@
 const back = document.querySelectorAll('.back'),
-  logo = document.getElementById('logo'),
+  logo = document.querySelectorAll('.logo'),
   text_header = document.getElementById('text_header'),
   backIm = document.querySelectorAll('.back img');
 
@@ -30,8 +30,8 @@ function animEvent()
   }
 
   backIm[0].style.transform = ("scale(" + scale + ")");
-  logo.style.transform = ("translate(" + trl + "vw, " + trl + "vw" + ")");
-  logo.style.opacity = text_header.style.opacity = lop;
+  logo[0].style.transform = ("translate(" + trl + "vw, " + trl + "vw" + ")");
+  logo[0].style.opacity = text_header.style.opacity = lop;
   text_header.style.transform = ("translate(" + -trl + "vw, " + -trl + "vw" + ")");
 
   scalePrev = scale;
