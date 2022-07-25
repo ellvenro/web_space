@@ -1,0 +1,38 @@
+.blocks1 {
+  height: 200vh;
+  text-align: center;
+  text-indent: 0;
+}
+
+.block1, .block1_line {
+  height: 200vh;
+  position: relative;
+  display: inline-block;
+  width: 49%;
+  margin: 0;
+  padding: 0;
+  color: #000;
+}
+
+.block1_line {
+  height: 200vh;
+  width: 3px;
+  background-color: #f02b4f;
+  border: none;
+}
+
+.block1_left, .block1_right {
+  width: 50%;
+  height: 60vh;
+  background-color: #c3c3d9;
+}
+
+.block1_left {
+  position: absolute;
+  right: 0px;
+}
+
+.block1_right {
+  position: absolute;
+
+}
