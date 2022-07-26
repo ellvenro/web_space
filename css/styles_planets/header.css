@@ -56,11 +56,10 @@ header {
   position: absolute;
   right: 80%;
   left: 1%;
-  top: 21%;
-  height: 34%
+  top: 17%;
 }
 
 .logo img {
-  height: 35%;
   margin-top: -1.5vw;
+  width: 100%;
 }
