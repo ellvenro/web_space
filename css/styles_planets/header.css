@@ -54,8 +54,8 @@ header {
 .logo {
   text-indent: 0;
   position: absolute;
-  right: 1%;
-  left: 80%;
+  right: 80%;
+  left: 1%;
   top: 21%;
   height: 34%
 }
