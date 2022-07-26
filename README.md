@@ -109,3 +109,5 @@ async function animHead()
   head[0].classList.remove('active');
 }
 ```
+
+[Карликовые планеты](https://spacegid.com/poyas-koypera.html#i-8)
