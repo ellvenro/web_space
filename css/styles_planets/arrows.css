@@ -1,0 +1,74 @@
+.arrows {
+    position: absolute;
+      margin: 0;
+}
+
+.print {
+  position: absolute;
+}
+
+/*Меркурий*/
+#arrow1 {
+  top: 7vh;
+  left: -35%;
+}
+
+#arrow1 img {
+  width: 8vw;
+}
+
+#print1 {
+  top: 25vh;
+  left: -70%;
+  right: 100%;
+}
+
+/*Венера*/
+#arrow2 {
+  top: -10vh;
+  left: 80%;
+}
+
+#arrow2 img {
+  width: 8vw;
+}
+
+#print2 {
+  top: -20vh;
+  left: 0;
+  text-align: left;
+}
+
+/*Земля*/
+#arrow3 {
+  top: 20vh;
+  left: -18%;
+}
+
+#arrow3 img {
+  height: 5vw;
+}
+
+#print3 {
+  top: 1vh;
+  left: -80%;
+  right: 110%;
+  text-align: right;
+}
+
+/*Марс*/
+#arrow4 {
+  top: -8vh;
+  left: 80%;
+}
+
+#arrow4 img {
+  width: 10vw;
+}
+
+#print4 {
+  top: 5vh;
+  left: 100%;
+  right: -70%;
+  text-align: right;
+}
