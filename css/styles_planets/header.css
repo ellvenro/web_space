@@ -1,3 +1,25 @@
+body {
+  cursor: url('../../img/curs-2.png'), auto;
+}
+
+.link:hover {
+  color: #ef6023;
+}
+
+a:hover {
+	cursor: url('../../img/curs3-2.png'), pointer;
+}
+
+.button:hover {
+  cursor: url('../../img/curs2-2.png'), pointer;
+  background-color: #ef6023;
+}
+
+/*Класс подписей*/
+.print {
+  color: #ef6023;
+}
+
 header {
   height: 100vh;
   text-indent: 0;
@@ -22,7 +44,6 @@ header {
   left: 15%;
   right: 15%;
   top: 65%;
-  height: 15%;
   background-color: rgb(0,0,0,0.8);
   padding: 2%;
   text-align: center;

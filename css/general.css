@@ -77,7 +77,6 @@ footer {
 .link:hover {
   color: #f02b4f;
   text-decoration: underline;
-
 }
 
 /*Ссылки на другие страницы*/
@@ -137,7 +136,6 @@ footer {
 }
 
 .button:active {
-  box-shadow: -2px 2px 1px rgba(0,0,0,0.3) inset, -2px -2px 1px rgba(0,0,0,0.3) inset, 2px 2px 1px rgba(0,0,0,0.3) inset, 2px -2px 1px rgba(0,0,0,0.3) inset;
   opacity: 0;
 }
 
