@@ -1,5 +1,10 @@
+.long {
+  margin: 4vw;
+  margin-top: 0;
+}
+
 .block1 {
-  height: 200vh;
+  height: 180vh;
   text-align: center;
   text-indent: 0;
   background: url("../../img/planets/backBlock1.png") repeat-y;
@@ -20,11 +25,11 @@
 }
 
 .block1 .left {
-
+  left: 18%;
 }
 
 .block1 .right {
-
+  left: 59%;
 }
 
 /*Текст в блоках*/
@@ -50,22 +55,41 @@
   height: 2vw;
   margin-left: -.20em;
   position: absolute;
+  top: 2vh;
 }
 
 .block1 .planet {
   background-color: #ef6023;
   padding: 2%;
+  right: 0;
+  border-right: solid rgb(46, 26, 7, 0.2) 1px;
+  margin: 0;
 }
 
 .block1 .corner {
   border: 1.5vw solid transparent;
   border-left: 1.5vw solid #ef6023;
   height: 0;
+  right: -3vw;
+}
+
+.block1 .right .planet {
+  left: 0;
+  right: auto;
+  border-right: none;
+  border-left: solid rgb(46, 26, 7, 0.2) 1px;
+}
+
+.block1 .right .corner {
+  border-left: none;
+  border-right: 1.5vw solid #ef6023;
+  right: auto;
+  left: -1.15vw;
 }
 
 /*Шаг блоков*/
 .block1 .step {
-  height: 2vw;
+  height: 2vh;
 }
 
 .block1 .step div {
@@ -74,6 +98,8 @@
   border-radius: 50px;
   padding: 1% 2%;
   display: inline-block;
-  height: 2vw;
-  line-height: 0.9;
+  height: 2vh;
+  font-size: 1.4vw;
+  line-height: 0.5;
+  margin-top: 4vh;
 }
