@@ -72,3 +72,21 @@
   right: -70%;
   text-align: right;
 }
+
+/*Юпитер*/
+#arrow5 {
+  top: 0;
+  left: 100%;
+  right: -20%;
+}
+
+#arrow5 img {
+  height: 10vh;
+}
+
+#print5 {
+  top: 10vh;
+  left: 100%;
+  right: -70%;
+  text-align: right;
+}
