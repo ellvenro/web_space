@@ -8,6 +8,7 @@
   text-indent: 0;
   background: url("../../img/planets/backBlock1.png") repeat-y;
   background-size: 100% auto;
+  padding-bottom: 4vh;
 }
 
 /*Информационные блоки*/
