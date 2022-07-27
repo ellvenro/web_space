@@ -1,13 +1,69 @@
-
-
 .block2.scroll {
   overflow: scroll;
   white-space: nowrap;
 }
 
+.block2.scroll .head.global  {
+  overflow: scroll;
+  white-space: nowrap;
+  display: inline-block;
+  vertical-align: top;
+  color: #000;
+  left: 10%;
+  white-space: normal;
+  text-align: right;
+  margin-right: -5%;
+  margin-left: 10%;
+  margin-top: 10%;
+  font-size: 3vw;
+}
 
 .block2.scroll .left {
   white-space: normal;
+  margin-right: 10%;
+  transition-duration: 1.5s;
+}
 
+#front1, #front2 {
+  position: relative;
+  height: 32vw;
+  width: 20%;
+  margin-top: -32.5vw;
+}
 
+#front1 {
+  background: linear-gradient(to right, #d9cbc3, rgba(217, 203, 195, 0.7), rgba(0 ,0, 0, 0));
+}
+
+#front2 {
+  left: 80%;
+  background: linear-gradient(to left, #d9cbc3, rgba(217, 203, 195, 0.7), rgba(0 ,0, 0, 0));
+}
+
+#Kuiper {
+  background: url("../../img/planets/KuiperBelt.jpg");
+}
+
+#Pluto {
+  background: url("../../img/planets/Pluto_NewHorizons_14july15.jpg");
+}
+
+#Makemake {
+  background: url("../../img/planets/Makemake.jpg");
+}
+
+#Haumea {
+  background: url("../../img/planets/Haumea.jpg");
+}
+
+#disk {
+  background: url("../../img/planets/disk.jpg");
+}
+
+#Erida {
+  background: url("../../img/planets/Erida.jpg");
+}
+
+#Oort {
+  background: url("../../img/planets/Oort.jpg");
 }

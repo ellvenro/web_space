@@ -11,6 +11,12 @@
   padding-bottom: 4vh;
 }
 
+.block1 .head.global {
+  margin:0;
+  margin-left: 45%;
+  font-size: 3vw
+}
+
 /*Информационные блоки*/
 .left, .right {
   width: 23%;

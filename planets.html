@@ -49,6 +49,8 @@
   </div>
 
   <article class="block1">
+    <div class="head global"><div>Планеты земной группы</div></div>
+
     <!--Меркурий-->
     <div class="step"><div>Первая</div></div>
     <div class="left">
@@ -145,7 +147,9 @@
     </div>
   </article>
 
-  <article class="block1">
+  <article class="block1 dop">
+    <div class="head global" style="margin: 0;right:25%; top:6vw;"><div>Планеты-гиганты</div></div>
+
     <!--Юпитер-->
     <div class="step" style="margin-top: 0vw;"><div>Пятая</div></div>
     <div class="right">
@@ -213,6 +217,8 @@
 
   <!--Пояс Койпера и Эрида, Плутон (бывшая планета), Хуамеа, Макемаке и Oблaкo Oopтa-->
   <article class="block2 scroll">
+    <!--Заголовок-->
+    <div class="head global">Транснептуновые <br>объекты</div>
     <!--Пояс Койпера-->
     <div class="left">
       <div class="fullText">
@@ -221,7 +227,7 @@
             Ледяной мир на окраине Солнечной системы. Это пространство, состоящее из малых объектов. Пояс расширяется за орбитой Нептуна и выглядит, как пончик.
         </div>
       </div>
-      <div class="img"></div>
+      <div class="img" id="Kuiper"></div>
       <div class="planet">Пояс Койпера</div>
     </div>
 
@@ -233,7 +239,7 @@
             Самая известная карликовая планета. на данный момент обнаружены 5 естественных спутников, самый крупный из них - Харон. Плутон вращается вместе с Хароном вокруг их общего центра масс.
         </div>
       </div>
-      <div class="img"></div>
+      <div class="img" id="Pluto"></div>
       <div class="planet">Плутон</div>
     </div>
 
@@ -245,7 +251,7 @@
             Крупнейший объект пояса Койпера. Солнце с поверхности Макемаке выглядит просто очень яркой и крупной звездой. Примерно так же выглядит Венера с поверхности Земли.
         </div>
       </div>
-      <div class="img"></div>
+      <div class="img" id="Makemake"></div>
       <div class="planet">Макемаке</div>
     </div>
 
@@ -257,7 +263,7 @@
             Самая необычная карликовая планета. Имеет два довольно крупных спутника - Хииака и Намака. Примечательна Хаумеа наличием колец.
         </div>
       </div>
-      <div class="img"></div>
+      <div class="img" id="Haumea"></div>
       <div class="planet">Хуамеа</div>
     </div>
 
@@ -269,7 +275,7 @@
             Удалённый регион Солнечной системы, слабо заселённый малыми телами, в основном состоящими изо льда. Частично перекрывается с поясом Койпера, но простирается намного далее за его пределы.
         </div>
       </div>
-      <div class="img"></div>
+      <div class="img" id="disk"></div>
       <div class="planet">Рассеянный диск</div>
     </div>
 
@@ -281,22 +287,28 @@
             Самая далекая карликовая планета. Имеет спутник - Дисномию. Часто находится так далеко от Солнца, что её атмосфера коллапсирует и замерзает, падая на землю в виде снега.
         </div>
       </div>
-      <div class="img"></div>
+      <div class="img" id="Erida"></div>
       <div class="planet">Эрида</div>
     </div>
 
     <!--Oблaкo Oopтa-->
-    <div class="left">
+    <div class="left" style="margin-right: 20%;">
       <div class="fullText">
         <div class="head">Делекий мир</div>
         <div class="text">
             Сферическая область из ледяных объектов, которые существуют в самых отдаленных уголках Солнечной системы.
         </div>
       </div>
-      <div class="img"></div>
+      <div class="img" id="Oort"></div>
       <div class="planet">Oблaкo Oopтa</div>
     </div>
+
+    <div style="display: inline-block; width: 26%;"></div>
   </article>
+
+  <!--Блоки для прозрачности-->
+  <div id="front1"></div>
+  <div id="front2"></div>
 
 
 
@@ -304,5 +316,6 @@
 
   <script src="js/general.js"></script>
   <script src="js/scripts_planets/horizontallScroll.js"></script>
+  <script src="js/scripts_planets/anim_main.js"></script>
 </body>
 </html>
