@@ -5,7 +5,6 @@
 
 .block2.scroll .head.global  {
   overflow: scroll;
-  white-space: nowrap;
   display: inline-block;
   vertical-align: top;
   color: #000;

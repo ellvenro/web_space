@@ -5,7 +5,8 @@
 1. [Сайт "Далекий космос", описывающий масштабы вселенной](#сайт)
 2. [Функциональность сайта](#функциональность)
 3. [Основные моменты при реализации](#реализация)  
-    3.1 [Страница scale.html](#scale)
+    3.1 [Страница scale.html](#scale)  
+    3.1 [Страница planets.html](#planets)
 
 <a name="сайт"></a>
 ## Сайт "Далекий космос", описывающий масштабы вселенной
@@ -110,4 +111,34 @@ async function animHead()
 }
 ```
 
-[Карликовые планеты](https://spacegid.com/poyas-koypera.html#i-8)
+<a name="planets"></a>
+### Страница planets.html
+
+Был реализован горизонтальный скролл последнего блока страницы.
+
+```CSS
+/*Родительский блок, в котором происходит скролл*/
+.block2.scroll {
+  overflow: scroll;
+  white-space: nowrap;
+}
+
+/*Дочерние блоки, которые выходят за границу родительского*/
+.block2.scroll .left {
+  display: inline-block;
+  width: 26%;
+  margin-right: 10%;
+  ...
+}
+```
+
+Для использования колесика мыши при скролле был написан скрипт.
+
+```js
+const scrollContainer = document.querySelector(".block2.scroll");
+
+scrollContainer.addEventListener("wheel", (evt) => {
+    evt.preventDefault();
+    scrollContainer.scrollLeft += evt.deltaY * 3.5;
+});
+```
