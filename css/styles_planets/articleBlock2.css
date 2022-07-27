@@ -28,11 +28,19 @@
 
 .block2 .left .img, .block2 .right .img  {
   height: 100%;
-  background: url("../../img/planets/asteroidBelt.jpg") right bottom;
   background-size: cover;
+  background-repeat: no-repeat; 
   position: absolute;
   bottom:0;
   right: 0;
+}
+
+.block2 .left .img {
+  background: url("../../img/planets/asteroidBelt.jpg") right bottom;
+}
+
+.block2 .right .img  {
+  background: url("../../img/planets/Ceres_Dawn_.14may15.jpg");
 }
 
 .block2 .planet {
