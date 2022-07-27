@@ -31,8 +31,8 @@ header {
   transition-duration: 1.5s;
   position: relative;
   width: 100%;
-  height: 75%;
-  top: 5vh;
+  height: 75vh;
+  top: 2vw;
   text-indent: 0;
   background: url('../../img/planets/back2.jpg') no-repeat;
   background-size: 100% auto;

@@ -1,0 +1,60 @@
+.block2 {
+  background-color: #d9cbc3;
+  text-indent: 0;
+  padding: 2vh 0;
+  position: relative;
+}
+
+.block2 .left, .block2 .right {
+  width: 26%;
+  height: 30vw;
+  position: relative;
+  display: inline-block;
+}
+
+.block2 .right {
+  left: 30%;
+}
+
+.block2 .left .img, .block2 .right .img, .block2 .fullText {
+  width: 49%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.block2 .fullText {
+  margin-top: 3.5vw;
+}
+
+.block2 .left .img, .block2 .right .img  {
+  height: 100%;
+  background: url("../../img/planets/asteroidBelt.jpg") right bottom;
+  background-size: cover;
+  position: absolute;
+  bottom:0;
+  right: 0;
+}
+
+.block2 .planet {
+  position: absolute;
+	background: #ef6023;
+  right: -1vw;
+  width: auto;
+  text-align: right;
+}
+
+.block2 .right .planet {
+  left: auto;
+}
+
+.block2 .planet:after {
+	content: '';
+	position: absolute;
+	top: 100%;
+	right: 0;
+	width: 0;
+	height: 0;
+	line-height: 0;
+	border-right: 1vw solid transparent;
+	border-top: 1vw solid #2e1a07;
+}

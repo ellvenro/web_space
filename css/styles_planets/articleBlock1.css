@@ -12,23 +12,23 @@
 }
 
 /*Информационные блоки*/
-.block1 .left, .block1 .right {
+.left, .right {
   width: 23%;
   background-color: #2e1a07;
   border: solid rgb(46, 26, 7, 0.2) 1px;
   position: relative;
 }
 
-.block1 .left img, .block1 .right img {
+.left img, .right img {
   position: relative;
   width: 100%;
 }
 
-.block1 .left {
+.left {
   left: 18%;
 }
 
-.block1 .right {
+.right {
   left: 59%;
 }
 
@@ -48,7 +48,7 @@
 }
 
 /*Подписи*/
-.block1 .planet, .block1 .corner{
+.planet, .corner{
   line-height: 0.9;
   margin: 0;
   top: 0;
@@ -58,7 +58,7 @@
   top: 2vh;
 }
 
-.block1 .planet {
+.planet {
   background-color: #ef6023;
   padding: 2%;
   right: 0;
@@ -66,21 +66,21 @@
   margin: 0;
 }
 
-.block1 .corner {
+.corner {
   border: 1.5vw solid transparent;
   border-left: 1.5vw solid #ef6023;
   height: 0;
   right: -3vw;
 }
 
-.block1 .right .planet {
+.right .planet {
   left: 0;
   right: auto;
   border-right: none;
   border-left: solid rgb(46, 26, 7, 0.2) 1px;
 }
 
-.block1 .right .corner {
+.right .corner {
   border-left: none;
   border-right: 1.5vw solid #ef6023;
   right: auto;
@@ -88,11 +88,11 @@
 }
 
 /*Шаг блоков*/
-.block1 .step {
+.step {
   height: 2vh;
 }
 
-.block1 .step div {
+.step div {
   background-color: #000;
   border: solid #ef6023 2px;
   border-radius: 50px;

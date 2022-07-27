@@ -9,7 +9,7 @@
 
 /*Меркурий*/
 #arrow1 {
-  top: 7vh;
+  top: 3vw;
   left: -35%;
 }
 
@@ -18,14 +18,14 @@
 }
 
 #print1 {
-  top: 25vh;
+  top: 13vw;
   left: -70%;
   right: 100%;
 }
 
 /*Венера*/
 #arrow2 {
-  top: -10vh;
+  top: -5vw;
   left: 80%;
 }
 
@@ -34,14 +34,14 @@
 }
 
 #print2 {
-  top: -20vh;
+  top: -10vw;
   left: 0;
   text-align: left;
 }
 
 /*Земля*/
 #arrow3 {
-  top: 20vh;
+  top: 10vw;
   left: -18%;
 }
 
@@ -50,7 +50,7 @@
 }
 
 #print3 {
-  top: -5vh;
+  top: -2vw;
   left: -80%;
   right: 110%;
   text-align: right;
@@ -58,7 +58,7 @@
 
 /*Марс*/
 #arrow4 {
-  top: -8vh;
+  top: -4vw;
   left: 80%;
 }
 
@@ -67,7 +67,7 @@
 }
 
 #print4 {
-  top: 5vh;
+  top: 2vw;
   left: 100%;
   right: -70%;
   text-align: right;
@@ -81,12 +81,47 @@
 }
 
 #arrow5 img {
-  height: 10vh;
+  height: 5vw;
 }
 
 #print5 {
-  top: 10vh;
+  top: 5vw;
   left: 100%;
   right: -70%;
+  text-align: right;
+}
+
+/*пояс астероидов*/
+#arrow6 {
+  top: 10vw;
+  left: 8vw;
+}
+
+#arrow6 img {
+  width: 40vw;
+}
+
+#print6 {
+  top: 13vw;
+  left: -65%;
+  right: 105%;
+  text-align: left;
+}
+
+/*Церера*/
+#arrow7 {
+  top: 13vw;
+  left: 100%;
+  right: -20%;
+}
+
+#arrow7 img {
+  height: 5vw;
+}
+
+#print7 {
+  top: 15vw;
+  left: 100%;
+  right: -60%;
   text-align: right;
 }
