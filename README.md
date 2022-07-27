@@ -126,6 +126,7 @@ async function animHead()
 /*Дочерние блоки, которые выходят за границу родительского*/
 .block2.scroll .left {
   display: inline-block;
+  vertical-align: top;
   width: 26%;
   margin-right: 10%;
   ...
