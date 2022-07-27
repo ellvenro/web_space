@@ -58,6 +58,7 @@ header {
   right: 80%;
   left: 1%;
   top: 17%;
+  transition-duration: 1.5s;
 }
 
 .logo img {
