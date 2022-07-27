@@ -1,0 +1,13 @@
+
+
+.block2.scroll {
+  overflow: scroll;
+  white-space: nowrap;
+}
+
+
+.block2.scroll .left {
+  white-space: normal;
+
+
+}
