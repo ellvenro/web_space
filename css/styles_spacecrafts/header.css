@@ -1,23 +1,50 @@
+body {
+  cursor: url('../../img/curs-2.png'), auto;
+  color: #81c7f0;
+}
+
+.link:hover {
+  color: #81c7f0;
+}
+
+a:hover {
+	cursor: url('../../img/curs3-2.png'), pointer;
+}
+
+.button:hover {
+  cursor: url('../../img/curs2-2.png'), pointer;
+  background-color: #81c7f0;
+}
+
+/*Класс подписей*/
+.print {
+  color: #81c7f0;
+}
+
 header {
   height: 100vh;
+  transition-duration: 1.5s;
+}
+
+header.active {
+  transform: scale(0.9);
 }
 
 .menu {
-text-indent: 0em;
+  text-indent: 0em;
   width: 100%;
+  text-align: center;
+  transition-duration: 0.5s;
 }
 
 .menu a {
+  margin: auto;
   display: inline-block;
-  width: 5%;
+  width: 6%;
   margin-right: 2%;
-  margin-top: 5%;
-  transition-duration: 0.5s;
-  cursor: url('../img/curs3.png'), pointer;
-}
-
-.menu :first-child {
-  margin-left: 16%;
+  margin-left: 0;
+  margin-top: 7%;
+  transition-duration: 1.5s;
 }
 
 .menu :last-child {
@@ -25,12 +52,70 @@ text-indent: 0em;
 }
 
 .menu a img {
-  display: inline-block;
   width: 100%;
-  height: 70%;
-  transition-duration: 0.5s;
 }
 
-.menu a:hover img {
-  transform: scale(1.1);
+.menu a:hover {
+  transform: scale(1.2);
+  margin-right: 4%;
+  margin-left: 2%;
+}
+
+.text_img {
+  margin-top: 2.5vw;
+  transition-duration: 1.5s;
+}
+
+.text_img:after {
+  content: ' ';
+  opacity: 0;
+  transition-duration: 1.5s;
+  position:absolute;
+  top: 41vw;
+  text-align: left;
+}
+
+#mercury:hover ~ .text_img:after {
+  content: 'к Меркурию';
+  opacity: 1;
+}
+
+#venus:hover ~ .text_img:after {
+  content: 'к Венере';
+  opacity: 1;
+}
+
+#earth:hover ~ .text_img:after {
+  content: 'на околоземную орбиту';
+  opacity: 1;
+}
+
+#mars:hover ~ .text_img:after {
+  content: 'к Марсу и на него';
+  opacity: 1;
+}
+
+#iupiter:hover ~ .text_img:after {
+  content: 'к Юпитеру';
+  opacity: 1;
+}
+
+#saturn:hover ~ .text_img:after {
+  content: 'к Сатурну';
+  opacity: 1;
+}
+
+#uranus:hover ~ .text_img:after {
+  content: 'к Урану';
+  opacity: 1;
+}
+
+#neptune:hover ~ .text_img:after {
+  content: 'к Нептуну';
+  opacity: 1;
+}
+
+#system:hover ~ .text_img:after {
+  content: 'за пределы планет Солнечной системы';
+  opacity: 1;
 }
