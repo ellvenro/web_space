@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/general.css">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/styles_spacecrafts/header.css">
+  <link rel="stylesheet" href="css/styles_spacecrafts/articleBlocks.css">
 </head>
 <body>
 
@@ -43,8 +44,64 @@
     </div>
   </header>
 
+  <div class="blocks">
+    <article class="block">
+      <div class="imgs"><img src="img/spacecrafts/Mercury.jpg"></div>
+      <div class="head">Космические аппараты, исследовавшие Меркурий</div>
+      <div id="mariner">
+        <div class="print">Mapинep-10 <br>(197З - 1975 года)</div>
+        <div><img src="img/spacecrafts/mariner_10.png"></div>
+      </div>
+      <div id="messenger">
+        <div><img src="img/spacecrafts/messenger.png"></div>
+        <div class="print">MESSENGER <br>(2004 - 2015 года)</div>
+      </div>
+      <div id="BepiColombo">
+        <div><img src="img/spacecrafts/BepiColombo.jpg"></div>
+        <div class="print">BepiColombo <br>(2018 год). Прибытие планируется <br>5 декабря 2025 года</div>
+      </div>
+    </article>
+
+    <article class="block">
+
+    </article>
+
+    <article class="block" style="background:#0c0;">
+    </article>
+    <article class="block" style="background:#00c;">
+    </article>
+  </div>
+
   <footer><a class="link" href="https://github.com/ellvenro">© ellvenro</a></footer>
 
   <script src="js/general.js"></script>
+  <script type="text/jscript">
+  const scrollContainer = document.querySelector(".blocks");
+  const rect = scrollContainer.getBoundingClientRect();
+
+  scrollContainer.addEventListener("wheel", (evt) => {
+      evt.preventDefault();
+      let sign = (evt.deltaY > 0) ? 1 : -1;
+      scrollContainer.scrollLeft += (sign * window.innerWidth);
+
+      /*if (scrollContainer.scrollLeft == 0)
+      {
+        //scrollContainer.scrollRight += evt.deltaX * 10;
+        //console.log(scrollContainer.scrollRight);
+        scrollContainer.scrollLeft += 1;
+        window.scrollTo(0, -30);
+      }
+      else if (scrollContainer.scrollLeft >= rect.right)
+      {
+        //scrollContainer.scrollRight += evt.deltaX * 10;
+        //console.log(scrollContainer.scrollRight);
+        scrollContainer.scrollLeft = 1;
+        window.scrollTo(0, 30);
+      }
+      else {
+        scrollContainer.scrollLeft += (sign * window.innerWidth);
+      }*/
+  });
+  </script>
 </body>
 </html>

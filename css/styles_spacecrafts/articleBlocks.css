@@ -1,0 +1,65 @@
+.blocks {
+  overflow: scroll;
+  white-space: nowrap;
+  width: 100%;
+  height: 100vh;
+  text-indent: 0;
+  position: relative;
+}
+
+.block {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  height: 100%;
+  white-space: normal;
+  position: relative;
+}
+
+.imgs {
+  position: absolute;
+  left: 0;
+  top:60%;
+  bottom: 0;
+  height: 40%;
+  width: 10%;
+}
+
+.imgs img {
+  height: 100%;
+}
+
+#mariner, #messenger, #BepiColombo {
+  width: 27%;
+  position: absolute;
+  text-align: center;
+  white-space: nowrap;
+}
+
+#mariner div, #messenger div, #BepiColombo div {
+  white-space: normal;
+  text-align: left;
+  margin-right: 5%;
+  text-align: center;
+}
+
+#mariner div img, #messenger div img, #BepiColombo div img {
+  width: 100%;
+}
+
+/*Маринер 10*/
+#mariner {
+  bottom: 0;
+  left: 16vw;
+}
+
+/*Месседжер*/
+#messenger {
+  top: 10vw;
+  left: 44vw;
+}
+
+#BepiColombo {
+  top: 19vw;
+  right: 2vw;
+}
