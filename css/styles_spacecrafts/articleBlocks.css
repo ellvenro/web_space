@@ -19,47 +19,90 @@
 .imgs {
   position: absolute;
   left: 0;
-  top:60%;
+  top: 60%;
   bottom: 0;
   height: 40%;
-  width: 10%;
+  width: 20%;
+}
+
+.imgs.top {
+  left: 0;
+  top: 0;
+  bottom: none;
+}
+
+.head.top {
+  margin-left: 20vw;
 }
 
 .imgs img {
-  height: 100%;
+  width: 100%;
 }
 
-#mariner, #messenger, #BepiColombo {
+.text {
+  margin-left: 2vw;
+  margin-top: -3vw;
+}
+
+.text.top {
+  margin-left: 20vw;
+}
+
+#mariner, #messenger, #BepiColombo, #venera1, #venera7, #akatsuki {
   width: 27%;
   position: absolute;
   text-align: center;
   white-space: nowrap;
 }
 
-#mariner div, #messenger div, #BepiColombo div {
+#venera1, #venera7, #akatsuki {
+  width: 25%;
+}
+
+#mariner div, #messenger div, #BepiColombo div, #venera1 div, #venera7 div, #akatsuki div {
   white-space: normal;
   text-align: left;
   margin-right: 5%;
   text-align: center;
 }
 
-#mariner div img, #messenger div img, #BepiColombo div img {
+#mariner div img, #messenger div img, #BepiColombo div img, #venera1 div img, #venera7 div img, #akatsuki div img {
   width: 100%;
 }
 
-/*Маринер 10*/
 #mariner {
   bottom: 0;
   left: 16vw;
 }
 
-/*Месседжер*/
 #messenger {
   top: 10vw;
   left: 44vw;
 }
 
 #BepiColombo {
-  top: 19vw;
+  top: 17vw;
   right: 2vw;
+}
+
+#venera1 {
+  top: 17vw;
+  left: 10vw;
+}
+
+#venera1 div img {
+  position: relative;
+  width: 70%;
+  transform: rotate(-10deg);
+  margin-left: -10vw;
+}
+
+#venera7 {
+  bottom: 2vw;
+  left: 40vw;
+}
+
+#akatsuki {
+  right: 3vw;
+  bottom: 6vw;
 }
