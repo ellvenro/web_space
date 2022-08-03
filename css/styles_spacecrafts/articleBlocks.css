@@ -38,7 +38,7 @@
 .imgs.center {
   left: 0;
   top: 0;
-  bottom: none;
+  bottom: 0;
 }
 
 .text {
@@ -61,7 +61,7 @@
   width: 100%;
 }
 
-#mariner, #messenger, #BepiColombo, #venera1, #venera7, #akatsuki, #earth_cr, #mrsexpress, #perseverance, #tyanven {
+.blok_cr {
   width: 27%;
   position: absolute;
   text-align: center;
@@ -72,7 +72,7 @@
   width: 25%;
 }
 
-#mariner div, #messenger div, #BepiColombo div, #venera1 div, #venera7 div, #akatsuki div, #mrsexpress div, #perseverance div, #tyanven div {
+.blok_cr div {
   white-space: normal;
   text-align: left;
   margin-right: 5%;
@@ -84,7 +84,7 @@
   white-space: normal;
 }
 
-#mariner div img, #messenger div img, #BepiColombo div img, #venera1 div img, #venera7 div img, #akatsuki div img, #earth_cr div img, #mrsexpress div img, #perseverance div img, #tyanven div img {
+.blok_cr div img {
   width: 100%;
 }
 
@@ -147,4 +147,14 @@
 #tyanven {
   top: 17vw;
   right: 2vw;
+}
+
+#galileo {
+  left: 23vw;
+  top: 13vw;
+}
+
+#juno {
+  right: 12vw;
+  bottom: 2vw;
 }
