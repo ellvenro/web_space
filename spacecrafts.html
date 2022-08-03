@@ -162,16 +162,19 @@
     <a name="UranusNeptune"></a>
 
     <article class="block">
-      <div class="imgs center left"><img src="img/spacecrafts/Uranus.png"></div>
-      <div class="imgs center right"><img src="img/spacecrafts/Neptune.png"></div>
-      <div class="head center">Космические аппараты, исследовавшие Уран и Нептун</div>
+      <div class="imgs" id="pluto"><img src="img/spacecrafts/pluto.png"></div>
+      <div class="imgs top" id="arrocot"><img src="img/spacecrafts/arrocot.png"></div>
+      <div class="head center">Космические аппараты, покидающие Солнечнцю систему</div>
       <div class="text center right">
-        <p>В окрестностях Урана побывал только один космический аппарат «Вояджер-2», пролетевший мимо.
-        <p>Eдинcтвeнным кocмичecким кopaблeм, пoбывaвшим вoзлe Heптунa также является «Boяджep-2».
+        <p>Пока что Солнечную систему покинули (или в настоящее время покидают) пять космических аппаратов: "Вояджеры" 1 и 2, "Пионеры" 10 и 11 и более молодой "Новые горизонты".
       </div>
-      <div class="blok_cr" id="voyager2">
-        <div class="print short">Вояджер-2 <br>(1977 год - н.в.)</div>
-        <div><img src="img/spacecrafts/voyager2.jpg"></div>
+      <div class="blok_cr" id="pioner10">
+        <div class="print short">Пионер-10 <br>(1972 год - н.в.)</div>
+        <div><img src="img/spacecrafts/pioner10.jpg"></div>
+      </div>
+      <div class="blok_cr" id="newhorizons">
+        <div><img src="img/spacecrafts/New_Horizons.png"></div>
+        <div class="print short">Новые горизонты <br>(2006 год - н.в.)</div>
       </div>
     </article>
     <a name="out"></a>
@@ -180,6 +183,7 @@
   <footer><a class="link" href="https://github.com/ellvenro">© 2022 ellvenro</a></footer>
 
   <script src="js/general.js"></script>
+  <script src="js/scripts_spacecrafts/scroll.js"></script>
   <script type="text/jscript">
   const scrollContainer = document.querySelector(".blocks");
   const rect = scrollContainer.getBoundingClientRect();

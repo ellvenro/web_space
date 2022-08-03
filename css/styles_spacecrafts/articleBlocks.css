@@ -67,6 +67,15 @@
   width: 100%;
 }
 
+#pluto {
+  left: 80%;
+}
+
+#arrocot {
+  top: 6vw;
+  width: 10%;
+}
+
 /*Заголовок*/
 .head.top {
   margin-left: 10vw;
@@ -211,4 +220,14 @@
 #voyager2 {
   left: 40vw;
   bottom: 1vw;
+}
+
+#pioner10 {
+  left: 10vw;
+  bottom: 2vw;
+}
+
+#newhorizons {
+  right: 15vw;
+  bottom: 5vw;
 }
