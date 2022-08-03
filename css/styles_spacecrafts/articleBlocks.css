@@ -2,7 +2,7 @@
   overflow: scroll;
   white-space: nowrap;
   width: 100%;
-  height: 100vh;
+  height: 50vw;
   text-indent: 0;
   position: relative;
 }
@@ -25,22 +25,25 @@
   width: 20%;
 }
 
+.head.top {
+  margin-left: 10vw;
+}
+
 .imgs.top {
   left: 0;
   top: 0;
   bottom: none;
 }
 
-.head.top {
-  margin-left: 20vw;
-}
-
-.imgs img {
-  width: 100%;
+.imgs.center {
+  left: 0;
+  top: 0;
+  bottom: none;
 }
 
 .text {
   margin-left: 2vw;
+  margin-right: 4vw;
   margin-top: -3vw;
 }
 
@@ -48,7 +51,17 @@
   margin-left: 20vw;
 }
 
-#mariner, #messenger, #BepiColombo, #venera1, #venera7, #akatsuki {
+.text.center {
+  text-indent: 1.5em;
+  margin-left: 20vw;
+  margin-right: 5vw;
+}
+
+.imgs img {
+  width: 100%;
+}
+
+#mariner, #messenger, #BepiColombo, #venera1, #venera7, #akatsuki, #earth_cr, #mrsexpress, #perseverance, #tyanven {
   width: 27%;
   position: absolute;
   text-align: center;
@@ -59,14 +72,19 @@
   width: 25%;
 }
 
-#mariner div, #messenger div, #BepiColombo div, #venera1 div, #venera7 div, #akatsuki div {
+#mariner div, #messenger div, #BepiColombo div, #venera1 div, #venera7 div, #akatsuki div, #mrsexpress div, #perseverance div, #tyanven div {
   white-space: normal;
   text-align: left;
   margin-right: 5%;
   text-align: center;
 }
 
-#mariner div img, #messenger div img, #BepiColombo div img, #venera1 div img, #venera7 div img, #akatsuki div img {
+#earth_cr div {
+  display: inline-block;
+  white-space: normal;
+}
+
+#mariner div img, #messenger div img, #BepiColombo div img, #venera1 div img, #venera7 div img, #akatsuki div img, #earth_cr div img, #mrsexpress div img, #perseverance div img, #tyanven div img {
   width: 100%;
 }
 
@@ -105,4 +123,28 @@
 #akatsuki {
   right: 3vw;
   bottom: 6vw;
+}
+
+#earth_cr {
+  left: 40vw;
+  bottom: 7vw;
+}
+
+#mrsexpress {
+  bottom: 2vw;
+  left: 17vw;
+}
+
+#perseverance {
+  top: 13vw;
+  left: 44vw;
+}
+
+#perseverance div img {
+  width: 70%;
+}
+
+#tyanven {
+  top: 17vw;
+  right: 2vw;
 }
