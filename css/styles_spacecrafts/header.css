@@ -1,5 +1,5 @@
 body {
-  cursor: url('../../img/curs-2.png'), auto;
+  cursor: url('../../img/curs-3.png'), auto;
 }
 
 .link:hover {
@@ -7,11 +7,11 @@ body {
 }
 
 a:hover {
-	cursor: url('../../img/curs3-2.png'), pointer;
+	cursor: url('../../img/curs3-3.png'), pointer;
 }
 
 .button:hover {
-  cursor: url('../../img/curs2-2.png'), pointer;
+  cursor: url('../../img/curs2-3.png'), pointer;
   background-color: #81c7f0;
 }
 
