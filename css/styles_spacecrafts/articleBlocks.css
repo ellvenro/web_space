@@ -16,6 +16,12 @@
   position: relative;
 }
 
+/**/
+.print.short {
+  font-size: 1.8vw;
+}
+
+/*Главная картинка*/
 .imgs {
   position: absolute;
   left: 0;
@@ -23,10 +29,6 @@
   bottom: 0;
   height: 40%;
   width: 20%;
-}
-
-.head.top {
-  margin-left: 10vw;
 }
 
 .imgs.top {
@@ -39,8 +41,38 @@
   left: 0;
   top: 0;
   bottom: 0;
+  height: 100%;
 }
 
+.imgs.center.left, .imgs.center.right {
+  width: 15%;
+}
+
+.imgs.center.right {
+  left: 85%;
+}
+
+.imgs.big {
+  left: 0;
+  top: 12vw;
+  bottom: 0;
+  width: 60%;
+}
+
+.imgs.center.left img, .imgs.center.right img {
+  height: 100%;
+}
+
+.imgs img {
+  width: 100%;
+}
+
+/*Заголовок*/
+.head.top {
+  margin-left: 10vw;
+}
+
+/*Текст под заголовком*/
 .text {
   margin-left: 2vw;
   margin-right: 4vw;
@@ -57,10 +89,11 @@
   margin-right: 5vw;
 }
 
-.imgs img {
-  width: 100%;
+.text.center.right {
+  margin-right: 20vw;
 }
 
+/*Блоки с информацией*/
 .blok_cr {
   width: 27%;
   position: absolute;
@@ -79,9 +112,15 @@
   text-align: center;
 }
 
-#earth_cr div {
+#earth_cr div, #cassini div, #huygens div {
   display: inline-block;
   white-space: normal;
+  vertical-align: top;
+}
+
+#huygens .print.short {
+  width: 110%;
+  margin-top: 3vw;
 }
 
 .blok_cr div img {
@@ -157,4 +196,19 @@
 #juno {
   right: 12vw;
   bottom: 2vw;
+}
+
+#cassini {
+  right: 40vw;
+  bottom: 20vw;
+}
+
+#huygens {
+  right: 40vw;
+  bottom: 0;
+}
+
+#voyager2 {
+  left: 40vw;
+  bottom: 1vw;
 }
