@@ -12,7 +12,7 @@ async function animHead()
   //Анимация точек в начате
   const circles = document.querySelectorAll('.circle');
 
-  for(let i = 0; i < 3; i++)
+  while (document.readyState != "complete")
   {
     circles[0].classList.add('active');
     circles[1].classList.remove('active');
