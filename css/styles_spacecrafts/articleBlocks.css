@@ -1,5 +1,5 @@
 .blocks {
-  overflow: scroll;
+  overflow-x: scroll;
   white-space: nowrap;
   width: 100%;
   height: 48vw;
