@@ -2,7 +2,7 @@
   overflow: scroll;
   white-space: nowrap;
   width: 100%;
-  height: 50vw;
+  height: 48vw;
   text-indent: 0;
   position: relative;
 }
@@ -25,7 +25,7 @@
 .imgs {
   position: absolute;
   left: 0;
-  top: 60%;
+  top: 55%;
   bottom: 0;
   height: 40%;
   width: 20%;

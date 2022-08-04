@@ -7,14 +7,13 @@ scrollContainer.addEventListener("wheel", (evt) => {
     evt.preventDefault();
     let sign = (evt.deltaY > 0) ? 1 : -1;
 
-    if (scrollContainer.scrollLeft == 0)
+    if (scrollContainer.scrollLeft == 0 && sign == -1)
     {
-      scrollContainer.scrollLeft = 1;
       window.scrollTo(0, -30);
     }
     else if (scrollContainer.scrollLeft > rect.right * 7 && sign == 1)
     {
-      scrollContainer.scrollLeft = 1;
+      scrollContainer.scrollLeft = 0;
       window.scrollTo(0, 30);
     }
     else {
