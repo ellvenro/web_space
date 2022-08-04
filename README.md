@@ -6,7 +6,8 @@
 2. [Функциональность сайта](#функциональность)
 3. [Основные моменты при реализации](#реализация)  
     3.1 [Страница scale.html](#scale)  
-    3.1 [Страница planets.html](#planets)
+    3.1 [Страница planets.html](#planets)  
+    3.1 [Страница spacecrafts.html](#spacecrafts)
 
 <a name="сайт"></a>
 ## Сайт "Далекий космос", описывающий масштабы вселенной
@@ -143,3 +144,53 @@ scrollContainer.addEventListener("wheel", (evt) => {
     scrollContainer.scrollLeft += evt.deltaY * 3.5;
 });
 ```
+
+<a name="spacecrafts"></a>
+### Страница spacecrafts.html
+
+На странице улучшен горизонтальный скролл по сравнению с предыдущей.
+
+Реализовано перемещение страницы к началу блоков.
+
+Для блока заголовка реализован скролл вниз к началу блока прокрутки по горизонтали.
+
+```js
+const scrollContainerHead = document.querySelector("header");
+scrollContainerHead.addEventListener("wheel", (evt) => {
+    evt.preventDefault();
+    window.scrollTo(0, window.innerHeight);
+});
+```
+
+Для блока с горизонтальной прокруткой реализовано возвращение к началу страницы при прокрутке блока до левого и правого краев.
+
+```js
+const scrollContainer = document.querySelector(".blocks");
+const rect = scrollContainer.getBoundingClientRect();
+
+scrollContainer.addEventListener("wheel", (evt) => {
+  const rect = scrollContainer.getBoundingClientRect();
+    evt.preventDefault();
+    //Направление скролла
+    let sign = (evt.deltaY > 0) ? 1 : -1;
+
+    //Сдвиг к началу страницы, если блок прокручен до левого края
+    if (scrollContainer.scrollLeft == 0)
+    {
+      scrollContainer.scrollLeft = 1;
+      window.scrollTo(0, -30);
+    }
+    //Сдвиг к началу страницы, если блок прокручен до правого края
+    else if (scrollContainer.scrollLeft > rect.right * 7 && sign == 1)
+    {
+      scrollContainer.scrollLeft = 1;
+      window.scrollTo(0, 30);
+    }
+    //Горизонтальная прокрутка страницы
+    else {
+      scrollContainer.scrollLeft += (sign * window.innerWidth);
+    }
+});
+```
+
+Также на странице реализовано меню в заголовке для перехода к разным местам блока горизонтальной прокрутки.
