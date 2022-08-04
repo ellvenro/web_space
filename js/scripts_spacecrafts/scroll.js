@@ -7,7 +7,6 @@ scrollContainer.addEventListener("wheel", (evt) => {
     evt.preventDefault();
     let sign = (evt.deltaY > 0) ? 1 : -1;
 
-
     if (scrollContainer.scrollLeft == 0)
     {
       scrollContainer.scrollLeft = 1;
