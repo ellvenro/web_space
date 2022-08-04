@@ -20,6 +20,12 @@ a:hover {
   color: #81c7f0;
 }
 
+/*Класс заголовков*/
+.head {
+  margin-top: 2vw;
+  margin-bottom: 4vw;
+}
+
 header {
   height: 100vh;
   transition-duration: 1.5s;
